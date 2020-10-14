@@ -3,7 +3,7 @@
     <div class="card"
         style="border-radius: 10px; overflow:hidden; -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); margin:20px">
         <div class="card-body">
-            <button id="1" class="btn btn-primary" style="margin:10px; display: flex; justify-content:center">THÊM PHIM
+            <button id="1" class="btn btn-primary" style="margin:10px; display: flex; justify-content:center">ĐĂNG PHIM
                 MỚI</button>
             <div id="2" style="display:none">
                 <form action="/admin/addmovie" method="POST" style="margin-top:40px">
