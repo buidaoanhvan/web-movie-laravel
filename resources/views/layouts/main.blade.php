@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="../img/logo.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="{{ URL::asset('public/img/logo.png') }}" type="image/gif" sizes="16x16">
     <title>Hay24H</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href=" {{ URL::asset('css/main.css') }}">
     <style>
         .modal {
             transition: opacity 0.25s ease;
@@ -30,12 +30,12 @@
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between px-2 py-3">
             <ul class="flex flex-col md:flex-row items-center">
                 <li>
-                    <a href="../">
-                        <img width="80" src="../img/logo.png" alt="">
+                    <a href="/">
+                        <img width="80" src="{{ URL::asset('public/img/logo.png') }}" alt="">
                     </a>
                 </li>
                 <li class="md:ml-16 mt-3 md:mt-0">
-                    <a href="../" class="hover:text-gray-300">Phim Mới</a>
+                    <a href="/" class="hover:text-gray-300">Phim Mới</a>
                 </li>
                 <li class="md:ml-6 mt-3 md:mt-0">
                     <a href="/theloai/Hành Động" class="hover:text-gray-300">Hành Động</a>
@@ -55,7 +55,7 @@
             </ul>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="relative mt-3 md:mt-0">
-                    <form action="../" method="get">
+                    <form action="./" method="get">
                         <input type="text" name="timkiem"
                             class="bg-gray-800 text-sm rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline"
                             placeholder="Tìm kiếm">

@@ -43,8 +43,14 @@
         </div>
     </div>
     <div id="content" class="p-4">
-        <iframe src="{{ $movie['link'] }}" width="100%" height="640" frameborder="0" allow="autoplay; fullscreen"
-            allowfullscreen></iframe>
+        @if ($movie['link'] == '1')
+            <h1 style="font-size:30px" class="text-center mt-8">Phim Đang Cập Nhật</h1>
+        @else
+            <div class="text-center mt-8">
+                <iframe style="display:inline-block" src="https://drive.google.com/file/d/{{ $movie['link'] }}/preview"
+                    width="80%" height="680"></iframe>
+            </div>
+        @endif
     </div>
     <script>
         var toggle = document.getElementById("toggle");

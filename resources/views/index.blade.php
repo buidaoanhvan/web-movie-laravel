@@ -5,11 +5,11 @@
             <div class=" grid grid-cols-1 ms:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
                 @foreach($movies as $movie)
                     <div class="mt-8">
-                    <a href="phim/{{$movie['id']}}">
+                    <a href="/phim/{{$movie['id']}}">
                             <img class="hover:opacity-75" src="{{$movie['hinhanh']}}" alt="parasite">
                         </a>
                         <div class="mt-2">
-                            <a href="phim/{{$movie['id']}}" class=" text-lg mt-2 hover:text-gray:300">{{$movie['tenphim']}}</a>
+                            <a href="/phim/{{$movie['id']}}" class=" text-lg mt-2 hover:text-gray:300">{{$movie['tenphim']}}</a>
                             <div class="flex items-center text-gray-400 text-sm mt">
                                 <svg class="w-4" viewBox="0 0 20 20" fill="#FFFF33">
                                     <path

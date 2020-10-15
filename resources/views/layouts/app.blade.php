@@ -6,7 +6,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Quản Lý Hệ Thống</title>
-    <link rel="icon" href="../img/logo.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="{{ URL::asset('public/img/logo.png') }}" type="image/gif" sizes="16x16">
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <!-- Fonts -->
@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img width="80" src="../img/logo.png" alt="">
+                    <img width="80" src="{{ URL::asset('public/img/logo.png') }}" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
